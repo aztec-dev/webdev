@@ -1,0 +1,144 @@
+body, header, nav, main, footer, h1, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#container {
+    text-align: center;
+}
+
+#container h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 48pt;
+}
+
+#container h3 {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* edits nav li elemtents */
+#navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #FCCF14;
+    z-index: 999;
+    box-shadow: 0 7px 20px 0 rgba(0,0,0,0.2),0 4px 10px 0 rgba(0,0,0,0.2);
+}
+
+nav li {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav li::after{
+    content: '';
+    margin-right: 3em;
+}
+
+nav a {
+    font-size: 16pt;
+    color: #323232;
+    text-decoration: none;
+    margin: auto;
+    padding-bottom: 13px;
+}
+
+nav a:hover {
+    color: #2F3180;
+    font-weight: bolder;
+    font-size: 20pt;
+}
+
+p {
+    font-family: 'Fira Mono', monospace;
+    text-align: justify;
+    margin-top: 3.5em;
+}
+
+#name {
+    margin-top: 7%;
+}
+
+/* edits avatar */
+#name img {
+    border-radius: 50%; /* makes image round */
+    margin-top: 3.5em;
+    box-shadow: 0 14px 20px 0 rgba(0,0,0,0.5),0 8px 10px 0 rgba(0,0,0,0.5);
+}
+
+#intro {
+    top: 0;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#skills {
+    margin-top: 10em;
+}
+
+/* This edits the body of the website */
+body {
+    /* background-image: url(images/7421018.jpg)
+    background: white; */
+    background: linear-gradient(45deg, #323232, #33383D, #354047, #354651, #3D4E5A);
+    background: linear-gradient(45deg, #2F3180, #1D1E4E, #108690);
+    background-color: #1D1E4E;
+    background-size: 400% 400%; 
+    animation: gradient 15s ease infinite;
+    color: #FFEA61;
+}
+/* this tweaks the background animation gradient */
+ @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} 
+
+/* edits container h1 element */
+#container h1{
+    color: #FFFFB7; /* sets h1 font color */
+}
+
+/* edites container h3 element */
+#container h3, h6{
+    color: #FFFFB7; /* sets h3 font color */
+    text-decoration: solid;
+}
+
+/* Icons */
+/* adjust/edit icons here */
+#icons {
+    margin-top: 5em;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+/* edits the images in the icon class */
+.icons img {
+    position: static;
+    float: left;
+    width: 128px;
+    height: 128px;
+    margin-right: 1em;
+}
+
+/* Projects */
+#project {
+    position: relative;
+    margin-top: 10em;
+}
+
+#about {
+    position: relative;
+    margin-top: 10em;
+}
+
